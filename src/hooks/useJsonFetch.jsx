@@ -12,11 +12,14 @@ function useJsonFetch( request, options = null){
 
       try {
         const response = await fetch(import.meta.env.VITE_URL + query, options);
-        console.log(import.meta.env.VITE_URL);
         const data = await response.json();
+
+        if(!response.ok){
+          setError(`Ошибка! ${data.status}`)
+        }
         setData(`Данные загружены. Статус: ${data.status}`);
       } catch (e) {
-        setError(`Ошибка!`);
+        setError(`Ошибка! ${e}`);
       } finally {
         setLoading(false);
       }
