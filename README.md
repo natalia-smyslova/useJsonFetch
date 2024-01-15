@@ -2,5 +2,6 @@
 
 [![Netology AHJ](https://github.com/natalia-smyslova/useJsonFetch/actions/workflows/web.yml/badge.svg)](https://github.com/natalia-smyslova/useJsonFetch/actions/workflows/web.yml)
 
-[ДЕМО]()
+[ДЕМО](https://natalia-smyslova.github.io/useJsonFetch/)
+
 [BACKEND](https://github.com/natalia-smyslova/useJsonFetch__backend)
